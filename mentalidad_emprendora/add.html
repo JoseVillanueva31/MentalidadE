@@ -1,121 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Add</title>
+    <link rel="stylesheet" href="/static/css/add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
+
 <body>
-    <div class="barrra-navegacion">
-        <nav class="navbar">
-            <a href="">Add</a>
-            <a href="">Select</a>
-            <a href="">Home</a>
-            <a href="">Select</a>
-            <a href="">User</a>
-            <a href="">Last</a>
-        </nav>
 
-    </div>
+   <!--barra de navegacion-->
+   <header class="contenedor-nav">
+    <nav class="navbar">
+        <ul>
+            <li><a href=#">Add<i class="fa-solid fa-plus"></i></a></li>
+            <li><a href="select.html">Select<i class="fa-regular fa-hand-point-up"></i></a></li>
+            <li><a href="index.html">Home<i class="fa-solid fa-house"></i></a></li>
+            <li><a href="user.html">User<i class="fa-regular fa-user"></i></a></li>
+            <li><a href="salir.html">Salir<i class="fa-solid fa-x"></i></a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main class="secciones">
 
-        <div class="titulos">
-            <h3>Agendar Tareas</h3>
-            <h1>Categorias</h1>
+    <!-- Contenido principal -->
+    <main class="contenedor">
+        <!-- Categorías de compras -->
+        <div class="titulo-compras">
+            <h3>Compras</h3>
         </div>
+        <section class="compras" id="tareas">
+            <article class="card-burger">
+                <i class="fa-solid fa-burger"></i>
+            </article>
+            <article class="card-corazon">
+                <i class="fa-solid fa-heart"></i>
+            </article>
+            <article class="card-taza">
+                <i class="fa-solid fa-cookie-bite"></i>
+            </article>
+            <article class="card-escoba">
+                <i class="fa-solid fa-broom"></i>
+            </article>
+        </section>
 
-        <div class="compras">
-
-            <div class="card-burger">
-                <img src="" alt="">
-            </div>
-       
-            <div class="card-corazon">
-                <img src="" alt="">
-            </div>
-
-            <div class="card-taza">
-                <img src="" alt="">
-            </div>
-
-            <div class="card-escoba">
-                <img src="" alt="">
-            </div>
-       
+        <!-- Categorías de pasear -->
+        <div class="titulo-pasear">
+            <h3>Pasear</h3>
         </div>
+        <section class="pasear">
+            <article class="card-coche">
+                <i class="fa-solid fa-baby-carriage"></i>
+            </article>
 
-        <div class="pasear">
+            <article class="card-pata">
+                <i class="fa-solid fa-paw"></i>
+            </article>
 
-            <div class="card-coche">
-                <img src="" alt="">
-            </div>
-       
-            <div class="card-pata">
-                <img src="" alt="">
-            </div>
-            
-            <div class="card-regalo">
-                <img src="" alt="">
-            </div>
+            <article class="card-regalo">
+                <i class="fa-solid fa-gift"></i>
+            </article>
+        </section>
 
-        </div>
     </main>
 
+    <!-- Sección adicional -->
 
-<section class="seccion uno">
-    
-    <h1>Agregar Fecha</h1>
-    
-    <div class="calendario">
+    <div class="todo-boleta">
 
-        <div class="calendar">
-
-            <img src="" alt="">
-
-            <p>
-                6/11 <br>
-                Ultimo
-            </p>
-
-            <p>
-                5/11 <br>
-                Ayer
-            </p>
+        <div class="container">
+            <header class="header">
+                <h1>Boleta de Pago</h1>
+            </header>
+            <div class="boleta">
+                <form class="receipt-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="monto">Monto:</label>
+                        <input type="number" id="monto" name="monto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Pago:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comprobante">Subir Comprobante:</label>
+                        <input type="file" id="comprobante" name="comprobante" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2024 Todos los derechos reservados.</p>
+            </footer>
         </div>
 
     </div>
 
-        <div class="comentario">
+   <!--pie de pagina footer-->
+   <footer class="contactos">
+    <div class="info">
+        <p>Numero: 48481548</p>
+        <p>
+            Direccion: <br> Los Maitenes 6060, Estacion Central <br>
+            Region Metropolitana
+        </p>
+        <p>
+            Telefonos: <br> 9 7575 8585 - 9 8585 7575
+        </p>
+        <p>
+            Email: <br> wikicolabora@gmail.com
+        </p>
+        <p>
+            <p>&copy; 2024 Wikicolabora - Todos los Derechos Reservados.
+        </p>
+    </div>
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.04983093684!2d-70.62116371120945!3d-33.500080631380285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d00be4a5fa81%3A0xcd8eaf5b1d547f64!2sDuoc%20UC%3A%20Sede%20San%20Joaqu%C3%ADn!5e0!3m2!1ses!2scl!4v1716257100283!5m2!1ses!2scl"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
 
-            <input type="text" placeholder="Escriba aqui..." >
-
-        </div>
-
-
-        <div class="comprobante">
-
-
-            <h1>FOTO/COMPROBANTE</h1>
-
-            <div class="botones">
-
-                
-            <button><img src="" alt=""></button>
-
-            
-            <button><img src="" alt=""></button>
-
-            <button><img src="" alt=""></button>
-
-            </div>
-
-        </div>
-
-
-</section>
-
-        
 
 </body>
 </html>

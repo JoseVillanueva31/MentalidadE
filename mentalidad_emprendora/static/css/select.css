@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*color variables*/
+:root {
+    --amarillopalido: #D8E1A8;
+    --rosapalido: #E8C4CE;
+    --verdepalido: #BAF1B7;
+    --beige: #F5F5DC;
+    --kaki: #d8bc79;
+    --blanco: #fff;
+    --negro: black;
+    --celeste: #1873cd;
+
+    --secondary-color: #f1f1f1;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/*cambios generales*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*cambios al cuerpo*/
+body {
+    background-color: var(--beige);
+    font-family: poppins;
+}
+
+/*cambios al navbar*/
+.contenedor-nav {
+    background-color: var(--kaki);
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blanco);
+    padding: 1rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+}
+
+
+/*cambios main*/
+.actividades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin:3.5rem 0;
+    gap: 5rem;
+    
+}
+
+.actividades h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.tarea {
+    width: 60%;
+    padding: 1.5rem 0rem;
+    background: #BA8B02;
+    background: -webkit-linear-gradient(to top, #181818, #BA8B02);
+    background: linear-gradient(to top, #181818, #BA8B02);
+    border-radius: 35px;
+}
+
+.tarea{
+
+    display: flex; 
+    justify-content: space-around;
+    gap:1.5rem:
+}
+
+.tarea a{
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tarea a i{
+    color: black;
+    transform: rotate(90deg);
+}
+
+/* Pie de pagina footer */
+.contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.contactos .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactos .mapa {
+    max-width: 400px;
+    width: 100%;
+}

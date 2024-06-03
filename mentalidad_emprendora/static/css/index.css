@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*color variables*/
+:root {
+    --amarillopalido: #D8E1A8;
+    --rosapalido: #E8C4CE;
+    --verdepalido: #BAF1B7;
+    --beige: #F5F5DC;
+    --kaki: #d8bc79;
+    --blanco: #fff;
+    --negro: black;
+    --celeste: #1873cd;
+}
+
+/*cambios generales*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*cambios al cuerpo*/
+body {
+    background-color: var(--beige);
+    font-family: poppins;
+}
+
+/*cambios al navbar*/
+.contenedor-nav {
+    background-color: var(--kaki);
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blanco);
+    padding: 1rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+}
+
+/* Cambios main */
+/* Principal */
+.principal {
+    height: 70vh !important;
+    background-image: url(../img/fondo_hojas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.principal .titulo {
+    color: var(--blanco);
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+}
+
+.principal .titulo h1 {
+    font-size: 3.5rem;
+}
+
+.principal .titulo h2 {
+    font-size: 2.5rem;
+}
+
+.principal .titulo p {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    color: var(--celeste);
+}
+
+.principal .imagen img {
+    height: 360px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Cambios circulos */
+.circulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.circulos article {
+    text-align: center;
+}
+
+.circulos article img {
+    height: 270px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: none;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.circulos p {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.user, .settings, .handshake {
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px #babecc;
+}
+
+.user {
+    background-color: var(--verdepalido);
+}
+
+.settings {
+    background-color: var(--rosapalido);
+}
+
+.handshake {
+    background-color: var(--amarillopalido);
+}
+
+/* Cambios en seccion cards */
+.contenedor-c {
+    margin-top: 3rem;
+    margin-bottom: 5rem; /* Añadir margen inferior para evitar superposición con el footer */
+}
+
+.contenedor-c h1 {
+    text-align: center;
+}
+
+.titulo-c {
+    font-size: 2.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: var(--verdepalido);
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 10px 10px 20px #babecc;
+    border-radius: 10px;
+    width: 200px; /* Definir ancho fijo para la tarjeta */
+    flex-grow: 1; /* Permitir que las tarjetas crezcan para adaptarse al espacio disponible */
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .circulos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+/* Pie de pagina footer */
+.contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.contactos .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactos .mapa {
+    max-width: 400px;
+    width: 100%;
+}

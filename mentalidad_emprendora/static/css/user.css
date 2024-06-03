@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*color variables*/
+:root {
+    --amarillopalido: #D8E1A8;
+    --rosapalido: #E8C4CE;
+    --verdepalido: #BAF1B7;
+    --beige: #F5F5DC;
+    --kaki: #d8bc79;
+    --blanco: #fff;
+    --negro: black;
+    --celeste: #1873cd;
+
+    --secondary-color: #f1f1f1;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/*cambios generales*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*cambios al cuerpo*/
+body {
+    background-color: var(--beige);
+    font-family: poppins;
+}
+
+/*cambios al navbar*/
+.contenedor-nav {
+    background-color: var(--kaki);
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blanco);
+    padding: 1rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+}
+
+/*cambios main*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contenedor h3{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.principal{
+    background-color: #D8E1A8;
+    padding: 2rem 12rem;
+    border-radius: 30px;
+    margin-bottom: 2.5rem;
+}
+.principal img{
+    height:450px;
+    width:500px;
+    border-radius: 80px;
+  
+}
+/*formulario*/
+
+.contenedor-f{
+    background-color: var(--kaki);
+    border-radius: 20px;
+    padding: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+.contenedor-f button{
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.contenedor-f button:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    gap: 5rem;
+ 
+}
+
+.formulario input{
+font-size: 1.5rem;
+padding: .5rem 2.5rem;
+border: #7a7878 solid 2px;
+border-radius: 10px;
+}
+
+
+
+/* Pie de pagina footer */
+.contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.contactos .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactos .mapa {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+

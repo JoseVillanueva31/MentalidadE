@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/* cambios generales */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* cambios al cuerpo */
+body {
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Esta propiedad centra el contenido verticalmente */
+    height: 100vh; /* Asegúrate de que el cuerpo ocupe toda la altura de la pantalla */
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div h1 {
+    color: aliceblue;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+div p {
+    color: aliceblue;
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: 400;
+}
